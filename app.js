@@ -1,6 +1,9 @@
 const express = require('express')
 const app = express()
 const port=process.env.PORT||3000
+var cors = require('cors')
+app.use(cors())
+ 
 
 app.get('/', function (req, res) {
   let data=[
