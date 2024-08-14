@@ -3,7 +3,13 @@ const app = express()
 const port=process.env.PORT||3000
 
 app.get('/', function (req, res) {
-  res.send('Hello World')
+  let data=[
+    {id:1,name:"std1"},
+    {id:2,name:"std2"},
+    {id:3,name:"std3"},
+    {id:4,name:"std4"}
+  ]
+  res.send(data)
 })
 
 app.listen(port)
